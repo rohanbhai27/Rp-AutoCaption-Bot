@@ -1,0 +1,43 @@
+{
+    "name": "Rp-AutoCaption-Bot",
+    "description": "Auto Caption BoT V1 @RnpUpdate",
+    "logo": "https35://graph.org/file/a3a93ffb72878499cce.jpg",
+    "keywords": [
+        "Private",
+        "Auto",
+        "Caption",
+        "Bot"
+    ],
+    "website": "https://youtube.com/@RnpDeveloper",
+    "repository": "https://github.com/rohanbhai27/Rp-AutoCaption-Bot",
+    "success_url": "https://youtube.com/@RnpDeveloper",
+    "env": {
+        "app_id": {
+            "description": "Your APP ID From my.telegram.org",
+            "value": ""
+        },
+        "api_hash": {
+            "description": "Your API Hash From my.telegram.org",
+            "value": ""
+        },
+        "bot_token": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""        
+        },
+        "custom_caption": {
+            "description": "Caption Text.  use {file_name} to get original file name",
+            "required": false       
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    }
+}
